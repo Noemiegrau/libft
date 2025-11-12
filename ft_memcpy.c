@@ -1,0 +1,46 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nograu <nograu@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/07 15:38:05 by nograu            #+#    #+#             */
+/*   Updated: 2025/11/12 13:38:31 by nograu           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+void	*ft_memcpy(void *dest, const void *src, size_t n)
+{
+	size_t i;
+	unsigned char	*d;
+	const unsigned char	*s;
+
+	if (!dest && !src)
+		return (NULL);
+	d = (unsigned char *)dest;
+	s = (const unsigned char *)src;
+	i = 0;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (dest);
+}
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int	main(void)
+// {
+// 	char	dest[30] = "";
+// 	char	*src = "Hello World!";
+// 	size_t	n = 5;
+	
+// 	printf("ft_memcpy: %s.\n", (char *)ft_memcpy(dest , src, n));
+// 	printf("memcpy: %s.\n", (char *)memcpy(dest, src, n));
+// 	return (0);
+// }
