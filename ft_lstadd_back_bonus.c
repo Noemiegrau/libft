@@ -1,36 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nograu <nograu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/07 11:50:53 by nograu            #+#    #+#             */
-/*   Updated: 2025/11/15 17:50:47 by nograu           ###   ########.fr       */
+/*   Created: 2025/11/13 15:07:07 by nograu            #+#    #+#             */
+/*   Updated: 2025/11/15 15:57:21 by nograu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	void	*ptr;
-	size_t	calcul;
+	t_list	*last;
 
-	if (nmemb != 0 && size != 0 && nmemb > SIZE_MAX / size)
-		return (NULL);
-	calcul = nmemb * size;
-	ptr = malloc(calcul);
-	if (!ptr)
-		return (NULL);
-	ft_bzero(ptr, calcul);
-	return (ptr);
+	last = *lst;
+	while(last->next != NULL)
+		last = last->next;
+	last->next = new;
 }
-
-int	main(void)
-{
-
-	return (0);
-}
-//If nmemb or size is 0, then calloc() returns a unique
-//pointer value that can be successfully passed to free().
