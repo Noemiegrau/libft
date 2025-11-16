@@ -6,7 +6,7 @@
 /*   By: nograu <nograu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 10:27:43 by nograu            #+#    #+#             */
-/*   Updated: 2025/11/07 11:50:19 by nograu           ###   ########.fr       */
+/*   Updated: 2025/11/16 17:58:48 by nograu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strdup(const char *s)
 {
-	int	i;
-	int	len_s;
+	int		i;
+	int		len_s;
 	char	*dest;
 
 	i = 0;
@@ -38,7 +38,7 @@ char	*ft_strdup(const char *s)
 // int	main(void)
 // {
 // 	char	s[30] = "Hello World!";
-	
+
 // 	printf("ft_strdup: %s\n", ft_strdup(s));
 // 	printf("strdup: %s\n", strdup(s));
 // 	return (0);

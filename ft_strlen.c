@@ -6,7 +6,7 @@
 /*   By: nograu <nograu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 12:12:52 by nograu            #+#    #+#             */
-/*   Updated: 2025/11/07 11:07:14 by nograu           ###   ########.fr       */
+/*   Updated: 2025/11/16 17:21:42 by nograu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ size_t	ft_strlen(const char *s)
 }
 
 // #include <stdio.h>
+// #include <string.h>
+
 // int main(int argc, char **argv)
 // {
 //     if (argc != 2)
@@ -30,7 +32,7 @@ size_t	ft_strlen(const char *s)
 //         printf("Please enter 1 parameter.");
 //         return (0);
 //     }
-//     printf("%ld", ft_strlen(argv[1]));
-//     printf("%ld", strlen(argv[1]));
+//     printf("%ld\n", ft_strlen(argv[1]));
+//     printf("%ld\n", strlen(argv[1]));
 //     return (0);
 // }

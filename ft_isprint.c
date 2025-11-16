@@ -6,7 +6,7 @@
 /*   By: nograu <nograu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 11:32:55 by nograu            #+#    #+#             */
-/*   Updated: 2025/11/07 11:06:56 by nograu           ###   ########.fr       */
+/*   Updated: 2025/11/16 11:23:15 by nograu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_isprint(int c)
 
 // int main(void)
 // {
-//     int c = 110;
+//     int c = 127;
 
 //     if (ft_isprint(c))
 //         printf("%d is printable", c);

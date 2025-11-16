@@ -6,7 +6,7 @@
 /*   By: nograu <nograu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 18:49:33 by nograu            #+#    #+#             */
-/*   Updated: 2025/11/12 11:09:02 by nograu           ###   ########.fr       */
+/*   Updated: 2025/11/16 17:58:25 by nograu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	c;
-	
+
 	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
@@ -34,7 +34,7 @@ void	ft_putnbr_fd(int n, int fd)
 
 // int	main(void)
 // {
-// 	int	n = 123456;
+// 	int	n = -123456;
 // 	int	fd = 1;
 
 // 	ft_putnbr_fd(n, fd);

@@ -6,7 +6,7 @@
 /*   By: nograu <nograu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 11:13:41 by nograu            #+#    #+#             */
-/*   Updated: 2025/11/07 11:06:32 by nograu           ###   ########.fr       */
+/*   Updated: 2025/11/16 11:09:39 by nograu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,8 @@ int	ft_atoi(const char *nptr)
 // #include <stdlib.h>
 // int main(void)
 // {
-//     const   char *nptr = "   ---+--+1234ab567";
+//     const   char *nptr = "   -1234ab567";
 //     printf("ft_atoi: %d.\n", ft_atoi(nptr));
-//     printf("atoi: %d.", atoi(nptr));
+//     printf("atoi: %d.\n", atoi(nptr));
 //     return (0);
 // }

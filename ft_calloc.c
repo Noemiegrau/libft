@@ -6,7 +6,7 @@
 /*   By: nograu <nograu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 11:50:53 by nograu            #+#    #+#             */
-/*   Updated: 2025/11/15 17:50:47 by nograu           ###   ########.fr       */
+/*   Updated: 2025/11/16 18:06:55 by nograu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,24 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	return (ptr);
 }
 
-int	main(void)
-{
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	int	*tab;
+// 	size_t	i;
 
-	return (0);
-}
-//If nmemb or size is 0, then calloc() returns a unique
-//pointer value that can be successfully passed to free().
+// 	tab = ft_calloc(5, sizeof(int));
+// 	if (!tab)
+// 	{
+// 		printf("allocation failed and calloc returned NULL\n");
+// 		return (1);
+// 	}
+// 	i = 0;
+// 	while (i < 5)
+// 	{
+// 		printf("tab[%zu] = %d\n", i, tab[i]);
+// 		i++;
+// 	}
+// 	free(tab);
+// 	return (0);
+// }

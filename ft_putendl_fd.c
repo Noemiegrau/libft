@@ -6,7 +6,7 @@
 /*   By: nograu <nograu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 18:46:09 by nograu            #+#    #+#             */
-/*   Updated: 2025/11/11 18:46:14 by nograu           ###   ########.fr       */
+/*   Updated: 2025/11/16 14:17:21 by nograu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,9 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
+
+// int	main(void)
+// {
+// 	ft_putendl_fd("Hello World!", 1);
+// 	return (0);
+// }

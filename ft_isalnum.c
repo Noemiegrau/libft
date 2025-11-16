@@ -6,7 +6,7 @@
 /*   By: nograu <nograu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 10:50:58 by nograu            #+#    #+#             */
-/*   Updated: 2025/11/07 11:06:41 by nograu           ###   ########.fr       */
+/*   Updated: 2025/11/16 11:14:06 by nograu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,16 @@ int	ft_isalnum(int c)
 
 // int main(void)
 // {
-// 	int c = 123;
-	
+// 	int c = 0;
+
 // 	if (ft_isalnum(c))
 // 		printf("%d is an alpha-num", c);
 // 	else 
 // 		printf("%d is not an alpha-num", c);
 // 	return (0);
 // }
+
+///// NE FONCTIONNE PAS \\\\\*
 
 // int main(int argc, char **argv)
 // {

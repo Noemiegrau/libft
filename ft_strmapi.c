@@ -6,7 +6,7 @@
 /*   By: nograu <nograu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 11:19:53 by nograu            #+#    #+#             */
-/*   Updated: 2025/11/12 12:06:40 by nograu           ###   ########.fr       */
+/*   Updated: 2025/11/16 17:23:56 by nograu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,21 +32,23 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (str);
 }
 
-char	to_upper_mapi(unsigned int i, char c)
-{
-	(void)i;
-	if (c >= 'a' && c <= 'z')
-		c -= 32;
-	return (c);
-}
+// char	to_upper_mapi(unsigned int i, char c)
+// {
+// 	(void)i;
+// 	if (c >= 'a' && c <= 'z')
+// 		c -= 32;
+// 	return (c);
+// }
 
-int	main(void)
-{
-	char	s[30] = "Hello World!";
-	char	*result;
-	
-	printf("Avant: %s\n", s);
-	result = ft_strmapi(s, to_upper_mapi);
-	printf("Apres: %s\n", result);
-	return (0);
-}
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	s[30] = "Hello World!";
+// 	char	*result;
+
+// 	printf("Avant: %s\n", s);
+// 	result = ft_strmapi(s, to_upper_mapi);
+// 	printf("Apres: %s\n", result);
+// 	return (0);
+// }

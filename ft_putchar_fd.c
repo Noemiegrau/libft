@@ -6,7 +6,7 @@
 /*   By: nograu <nograu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 18:48:14 by nograu            #+#    #+#             */
-/*   Updated: 2025/11/11 18:48:22 by nograu           ###   ########.fr       */
+/*   Updated: 2025/11/16 14:16:07 by nograu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,9 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+
+// int	main(void)
+// {
+// 	ft_putchar_fd('n', 1);
+// 	return (0);
+// }

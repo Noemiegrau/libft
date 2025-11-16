@@ -6,7 +6,7 @@
 /*   By: nograu <nograu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 15:09:56 by nograu            #+#    #+#             */
-/*   Updated: 2025/11/07 16:52:33 by nograu           ###   ########.fr       */
+/*   Updated: 2025/11/16 18:06:46 by nograu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;
-	size_t i;
+	size_t			i;
 
 	i = 0;
 	ptr = (unsigned char *)s;
@@ -33,9 +33,9 @@ void	ft_bzero(void *s, size_t n)
 // {
 // 	char	s[30] = "Hello World!";
 // 	char	s2[30] = "Hello World!";
-// 	size_t	n = 6;
+// 	size_t	n = 4;
 // 	size_t	i = 0;
-	
+
 // 	ft_bzero(s, n);
 // 	bzero(s2, n);
 
