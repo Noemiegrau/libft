@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nograu <nograu@student.42.fr>              +#+  +:+       +#+        */
+/*   By: noemi <noemi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 16:56:15 by nograu            #+#    #+#             */
-/*   Updated: 2025/11/16 18:08:49 by nograu           ###   ########.fr       */
+/*   Updated: 2025/11/19 12:09:12 by noemi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,24 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t				i;
-	unsigned char		*d;
-	const unsigned char	*s;
+	size_t	i;
 
-	i = 0;
-	d = (unsigned char *)dest;
-	s = (const unsigned char *)src;
-	if (d < s)
+	if (!dest && !src)
+		return (NULL);
+	if (src > dest)
 	{
 		i = 0;
 		while (i < n)
 		{
-			d[i] = s[i];
+			((unsigned char *)(dest))[i] = ((unsigned char *)(src))[i];
 			i++;
 		}
 	}
 	else
 	{
-		while (n > 0)
-		{
-			n--;
-			d[n] = s[n];
-		}
+		i = n;
+		while (i-- > 0)
+			((unsigned char *)(dest))[i] = ((unsigned char *)(src))[i];
 	}
 	return (dest);
 }
@@ -53,6 +48,25 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 // 	printf("ft_memmove: %s.\n", (char *)ft_memmove(dest, src, n));
 // 	printf("memmove: %s.\n", (char *)memmove(dest, src, n));
 // 	return (0);
+// }
+
+// void	*ft_memmove(void *dest, const void *src, size_t n)
+// {
+// 	unsigned char		*d;
+// 	const unsigned char	*s;
+
+// 	if (!dest && !src)
+// 		return (NULL);
+// 	d = (unsigned char *)dest;
+// 	s = (const unsigned char *)src;
+// 	if (d < s)
+// 		ft_memcpy(dest, src, n);
+// 	else
+// 	{
+// 		while (n--)
+// 			d[n] = s[n];
+// 	}
+// 	return (dest);
 // }
 
 ////REMOVED ////*
